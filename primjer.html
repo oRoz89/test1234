@@ -1,0 +1,40 @@
+<html>
+   <head>
+      <title> Primjer 4. - primjeri dijaloga </title>
+   </head>
+   <body bgcolor=pink text="darkgreen">
+
+   <form>
+<input type="button" value="Klikni me" name="link_na_FSR" onClick="window.location='http://www.fsr.ba'">
+<p>
+<input type="button" value="Dijalog alert" name="Alert" onClick="alert('Ovaj prozor predstavlja dijalog alert')">
+<p>
+<input type="button" value="Dijalog confirm" name="Confirm" onClick="confirm('Ovaj prozor predstavlja dijalog confirm. Je li to u redu?')">
+<p>
+<input type="button" value="Dijalog prompt" name="Prompt" onClick="prompt('Ovaj prozor predstavlja dijalog prompt. Upiaite svoje ime:')">
+   </form>    
+<p>
+   <script language="JavaScript">
+
+var ime = prompt("Unesite svoje ime:", "neko ime")
+
+if (ime!="" && ime!=null)
+{document.write("<h2> Sretno s JavaScriptom, " + ime + "! ;) </h2>")}
+else 
+{document.write("<h2> Nema pozdrava. :( </h2>")}
+</script>
+<p>
+  <script language="JavaScript">
+alert("Zdravo, kako ste?")
+document.write("<h2> Zdravo, kako ste? </h2>")
+</script>
+<p>
+  <script language="JavaScript">
+ var akcija = confirm("}elite li nastaviti s radom?")
+ if (akcija == true) 
+ {document.write("<h2> Nastavimo onda... </h2>")}
+ else {document.write("<h2> Nastavit emo drugi put. Dovienja! </h2>")}
+
+   </script>
+   </body>
+</html>
